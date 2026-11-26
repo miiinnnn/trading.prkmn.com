@@ -54,7 +54,7 @@ const fileCache = new Map<string, OhlcvBar[]>();
 
 export async function loadManifest(): Promise<DataManifest> {
   if (manifestCache) return manifestCache;
-  const res = await fetch("/data/manifest.json");
+  const res = await fetch("/market/manifest.json");
   if (!res.ok) throw new Error(`manifest 로드 실패 (${res.status})`);
   manifestCache = (await res.json()) as DataManifest;
   return manifestCache;
@@ -84,7 +84,7 @@ function parseBin(buffer: ArrayBuffer): OhlcvBar[] {
 async function fetchBin(filename: string): Promise<OhlcvBar[]> {
   const cached = fileCache.get(filename);
   if (cached) return cached;
-  const res = await fetch(`/data/${filename}`);
+  const res = await fetch(`/market/${filename}`);
   if (!res.ok) throw new Error(`${filename} 로드 실패 (${res.status})`);
   const buf = await res.arrayBuffer();
   const parsed = parseBin(buf);

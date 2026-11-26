@@ -75,7 +75,7 @@ def main() -> None:
     t0 = time.time()
     root = Path(__file__).resolve().parent.parent
     src = root / "data" / "nq_1m_continuous.parquet"
-    out_dir = root / "public" / "data"
+    out_dir = root / "public" / "market"
     out_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"Reading {src} ...")
