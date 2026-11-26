@@ -1,5 +1,5 @@
-import TradingViewChart from "@/components/TradingViewChart";
+import TradingDesk from "@/components/TradingDesk";
 
 export default function Home() {
-  return <TradingViewChart />;
+  return <TradingDesk />;
 }

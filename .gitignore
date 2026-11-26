@@ -1,13 +1,8 @@
-# Dependencies
 /node_modules
 /.next
 /out
-
-# Raw & intermediate local data (keep public/data/ for Vercel CDN)
 /GLBX-20261113-6XU8ERGXUY
 /data
-
-# Misc
 .DS_Store
 *.log
 .env*.local

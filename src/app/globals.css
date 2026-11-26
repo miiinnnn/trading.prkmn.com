@@ -8,14 +8,27 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-color: #ffffff;
-  color: #131722;
-  font-family: -apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, "Malgun Gothic", sans-serif;
+  color: #111827;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
 }
 
 .tabular-nums {
   font-variant-numeric: tabular-nums;
+}
+
+/* Subtle classic scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f8f9fb;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
