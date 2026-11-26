@@ -1,5 +1,5 @@
-import BacktesterApp from "@/components/BacktesterApp";
+import TradingViewChart from "@/components/TradingViewChart";
 
 export default function Home() {
-  return <BacktesterApp />;
+  return <TradingViewChart />;
 }
