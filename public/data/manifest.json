@@ -1,0 +1,95 @@
+{
+  "symbol": "NQ.FUT (Front-Month Panama Back-Adjusted)",
+  "point_value_usd": 20,
+  "tick_size": 0.25,
+  "record_bytes": 24,
+  "start_date": "2021-11-15",
+  "end_date": "2026-11-13",
+  "timeframes": {
+    "1m": {
+      "chunked": true,
+      "chunks": [
+        {
+          "file": "nq_1m_2021.bin",
+          "bars": 46450,
+          "bytes": 1114800,
+          "start_ts": 1636930800,
+          "end_ts": 1640987940,
+          "year": 2021
+        },
+        {
+          "file": "nq_1m_2022.bin",
+          "bars": 354113,
+          "bytes": 8498712,
+          "start_ts": 1641164400,
+          "end_ts": 1672437540,
+          "year": 2022
+        },
+        {
+          "file": "nq_1m_2023.bin",
+          "bars": 353398,
+          "bytes": 8481552,
+          "start_ts": 1672700400,
+          "end_ts": 1703887140,
+          "year": 2023
+        },
+        {
+          "file": "nq_1m_2024.bin",
+          "bars": 355014,
+          "bytes": 8520336,
+          "start_ts": 1704150000,
+          "end_ts": 1735682340,
+          "year": 2024
+        },
+        {
+          "file": "nq_1m_2025.bin",
+          "bars": 352564,
+          "bytes": 8461536,
+          "start_ts": 1735772400,
+          "end_ts": 1767218340,
+          "year": 2025
+        },
+        {
+          "file": "nq_1m_2026.bin",
+          "bars": 308644,
+          "bytes": 7407456,
+          "start_ts": 1767308400,
+          "end_ts": 1794527940,
+          "year": 2026
+        }
+      ]
+    },
+    "5m": {
+      "chunked": false,
+      "file": "nq_5m.bin",
+      "bars": 354069,
+      "bytes": 8497656,
+      "start_ts": 1636930800,
+      "end_ts": 1794527700
+    },
+    "15m": {
+      "chunked": false,
+      "file": "nq_15m.bin",
+      "bars": 118023,
+      "bytes": 2832552,
+      "start_ts": 1636930800,
+      "end_ts": 1794527100
+    },
+    "1h": {
+      "chunked": false,
+      "file": "nq_1h.bin",
+      "bars": 29516,
+      "bytes": 708384,
+      "start_ts": 1636930800,
+      "end_ts": 1794524400
+    },
+    "1d": {
+      "chunked": false,
+      "file": "nq_1d.bin",
+      "bars": 1293,
+      "bytes": 31032,
+      "start_ts": 1636934400,
+      "end_ts": 1794528000
+    }
+  }
+}
